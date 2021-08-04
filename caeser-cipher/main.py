@@ -8,10 +8,6 @@ def caesar(start_text, shift_amount, cipher_direction):
     shift_amount *= -1
   for char in start_text:
     if char.isalpha():
-    #TODO-3: What happens if the user enters a number/symbol/space?
-    #Can you fix the code to keep the number/symbol/space when the text is encoded/decoded?
-    #e.g. start_text = "meet me at 3"
-    #end_text = "•••• •• •• 3"
       position = alphabet.index(char)
       new_position = position + shift_amount
       end_text += alphabet[new_position]
