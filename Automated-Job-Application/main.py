@@ -9,8 +9,8 @@ button=driver.find_element_by_link_text("Sign in")
 button.click()
 
 # <-------Page 2-sign in credentials------->
-email="binitasonitest@gmail.com"
-p="2018Bini!"
+email="[YOUR DATA]"
+p="[YOUR DATA]"
 
 username=driver.find_element_by_id("username")
 username.send_keys(email)
