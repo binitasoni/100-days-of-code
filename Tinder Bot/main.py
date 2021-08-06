@@ -24,13 +24,13 @@ try:
  print(driver.title)
 
  button = driver.find_element_by_xpath('//*[@id="identifierId"]')
- button.send_keys("areumlee010@gmail.com")
+ button.send_keys(""[YOUR DATA]"")
  button.send_keys(Keys.ENTER)
 
  time.sleep(2)
 
  button = driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
- button.send_keys("2018Bini!")
+ button.send_keys(""[YOUR DATA]"")
  button.send_keys(Keys.ENTER)
  time.sleep(5)
 
