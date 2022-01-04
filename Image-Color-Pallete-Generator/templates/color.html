@@ -1,0 +1,16 @@
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-2.css') }}">
+<div class="color-list">
+{%for i in range(1, len)%}
+  <section class="color" style="background-color:rgb{{rgb[i]}} !important;">
+    <h2 class="name">Color {{i}}</h2>
+    <ul class="details">
+      <li>R {{rgb[i][0]}}</li>
+    <li>G {{rgb[i][1]}}</li>
+      <li>B {{rgb[i][2]}}</li>
+      <li>RGB:{{rgb[i]}} </li>
+    </ul>
+  </section>
+{%endfor%}
+</div>
+{% endblock %}
